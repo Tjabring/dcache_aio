@@ -5,12 +5,16 @@ It creates a self-signed host certificate, but does not use that
 (it's only needed to start the service).
 
 Features:
-- Auto-detects Linux distribution.
 - Installs PostgreSQL and dCache.
 - Configures PostgreSQL for dCache.
 - Sets up firewall rules.
 - Generates a self-signed certificate.
 - Supports interactive mode for input if parameters aren't provided.
+
+You need to install git and lynx
+```
+dnf -y install git lynx
+```
 
 You'll need to specify two values or you will be prompted to give them.
 
